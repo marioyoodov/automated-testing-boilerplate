@@ -1,0 +1,84 @@
+{
+  // 关闭自动更新
+  "update.mode": "none",
+  "update.enableWindowsBackgroundUpdates": false,
+  // 基础设置: 关闭启动页、窗口最大化、关闭远程推送
+  "workbench.startupEditor": "none",
+  "window.newWindowDimensions": "maximized",
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  "database-client.telemetry.usesOnlineServices": false,
+  // 图标与颜色主题
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Default Dark Modern",
+  // 空白符显示
+  "editor.renderWhitespace": "all",
+  "workbench.colorCustomizations": {
+    "editorWhitespace.foreground": "#186699",
+    "editor.selectionBackground": "#3691a8"
+  },
+  // 文件配置
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnSave": true,
+    "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": true,
+      "source.organizeImports.ruff": true
+    }
+  },
+  "ruff.lint.args": ["--line-length=120", "--ignore=F841"],
+  "black-formatter.args": [
+    // "--skip-string-normalization",
+    "--line-length=120"
+  ],
+  "mypy-type-checker.args": ["--check-untyped-defs"],
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.autoImportCompletions": true,
+  // "python.analysis.inlayHints.callArgumentNames": "all",
+  // "python.analysis.inlayHints.functionReturnTypes": true,
+  // "python.analysis.inlayHints.variableTypes": true,
+  // "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+    // "reportUnusedVariable": "warning",
+    // "reportUnknownMemberType": "warning",
+    // "reportUntypedFunctionDecorator": "warning",
+    // "reportMissingTypeStubs": "warning"
+  },
+  // markmap
+  "markmap.defaultOptions": "{\"color\":[\"#1f77b4\",\"#a6cee3\",\"#ff7f0e\",\"#fdbf6f\",\"#2ca02c\",\"#b2df8a\",\"#d62728\",\"#fb9a99\",\"#6a3d9a\",\"#cab2d6\",\"#8c564b\",\"#ffff99\",\"#e377c2\",\"#7f7f7f\",\"#bcbd22\",\"#17becf\"],\"colorFreezeLevel\":0,\"initialExpandLevel\":-1}",
+  // rest client
+  "rest-client.previewOption": "exchange",
+  // database
+  "database-client.highlightSQLBlock": true,
+  "database-client.escapedAllObjectName": true,
+  "database-client.showFunction": false,
+  "database-client.showProcedure": false,
+  "excalidraw.theme": "auto"
+}
